@@ -6,9 +6,11 @@ All necessary information regarding the schematics and PCB of the Ledger Blue De
 
 [![Ledger Blue Schematics](render-schematics.png)](schematics-v06.pdf)
 
-Developers can use JTAG to debug code directly on the Non Secure microcontroller
+Developers can use SWD to debug code directly on the Non Secure microcontroller (STM32L476RCT6)
 
-[![STM32 JTAG header](render-jtag.jpg)](JTAG.pdf) 
+[![STM32 Debug header](render-jtag.jpg)](DEBUGGING.md)
+
+**[📖 Complete Debugging Guide with Raspberry Pi Pico →](DEBUGGING.md)** 
 
 Available files:
 
@@ -17,6 +19,12 @@ Available files:
 * [PCB bottom layer](assembly-bottom-layer-v06.gbl)
 * [PCB top layer](assembly-top-layer-v06.gtl)
 * [PCB placement](assembly-drawings-v06.pdf)
+
+## Debugging
+
+The board includes a 5-pin SWD debug header for debugging the STM32L476RCT6 microcontroller. You can use a Raspberry Pi Pico as an affordable debug probe.
+
+* **[Complete Debugging Guide with Raspberry Pi Pico](DEBUGGING.md)** - Detailed instructions on pin connections, setup, and debugging workflow
 
 ## Bill of materials
 
