@@ -205,7 +205,7 @@ For a better debugging experience, you can use Visual Studio Code with the Corte
             "servertype": "openocd",
             "cwd": "${workspaceRoot}",
             "executable": "${workspaceRoot}/build/your_firmware.elf",
-            "device": "STM32L476RC",
+            "device": "STM32L476RCT6",
             "configFiles": [
                 "ledger-blue-picoprobe.cfg"
             ],
@@ -261,7 +261,7 @@ openocd -f ledger-blue-picoprobe.cfg -c "program your_firmware.bin 0x08000000 ve
 ### STM32L476RCT6 Specifications
 - **Core:** ARM Cortex-M4 with FPU
 - **Flash:** 256 KB
-- **RAM:** 128 KB
+- **RAM:** 96 KB SRAM
 - **Max Clock:** 80 MHz
 - **Debug Interface:** SWD (Serial Wire Debug)
 
